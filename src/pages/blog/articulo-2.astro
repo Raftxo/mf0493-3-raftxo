@@ -1,0 +1,17 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+const base = import.meta.env.BASE_URL;
+---
+
+<BaseLayout
+  title="Señales de alarma en mascotas | Clínica Patitas"
+  description="Conoce los síntomas urgentes que deben valorarse cuanto antes en perros y gatos."
+>
+  <h1>Señales de alarma que no debes pasar por alto</h1>
+  <p>Los perros y gatos pueden ocultar el malestar. Observar cambios de conducta o apetito ayuda a detectar problemas a tiempo.</p>
+
+  <h2>Cuándo solicitar atención urgente</h2>
+  <p>Dificultad para respirar, golpes, convulsiones, sangrado persistente, colapso o incapacidad para orinar requieren valoración inmediata. Si tienes dudas, llama antes a la clínica.</p>
+
+  <p><a href={`${base}blog/`}>Volver al blog</a></p>
+</BaseLayout>

@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const base = import.meta.env.BASE_URL;
+---
+
+<BaseLayout
+  title="Clínica veterinaria Patitas | Atención cercana para mascotas"
+  description="Clínica veterinaria Patitas ofrece medicina preventiva, diagnóstico, cirugía y urgencias con atención cercana y profesional."
+>
+  <h1>Salud y bienestar para cada etapa de tu mascota</h1>
+  <p>En Patitas cuidamos a perros y gatos con tratamientos personalizados, tecnología actual y una atención humana y transparente.</p>
+
+  <img
+    src={`${base}images/ejemplo.svg`}
+    alt="Ilustración de una clínica veterinaria moderna y acogedora"
+    width="640"
+    height="360"
+  />
+
+  <h2>Lo que ofrecemos</h2>
+  <p>Trabajamos la prevención, la medicina interna y la cirugía con seguimiento personalizado. Nuestro equipo te acompaña antes, durante y después de cada visita.</p>
+</BaseLayout>

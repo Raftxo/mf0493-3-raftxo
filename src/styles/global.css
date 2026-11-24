@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background: #f4f8fb;
+}
+
+header {
+  background: #245b52;
+  color: #fff;
+  padding: 1.25rem 1.5rem;
+}
+
+.site-name {
+  margin: 0 0 0.4rem;
+  font-weight: 700;
+}
+
+nav a {
+  color: #fff;
+  margin-right: 1rem;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.25rem;
+}
+
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+h1, h2 {
+  color: #245b52;
+  line-height: 1.2;
+}
+
+main p {
+  max-width: 68ch;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+footer {
+  margin-top: 3rem;
+  background: #e3eeeA;
+  text-align: center;
+  padding: 1.5rem;
+  color: #555;
+}

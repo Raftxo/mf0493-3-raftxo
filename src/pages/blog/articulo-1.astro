@@ -1,0 +1,17 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+const base = import.meta.env.BASE_URL;
+---
+
+<BaseLayout
+  title="Primera visita del cachorro | Clínica Patitas"
+  description="Preparativos y recomendaciones para que la primera revisión veterinaria de tu cachorro sea tranquila y completa."
+>
+  <h1>Cómo preparar la primera visita de tu cachorro</h1>
+  <p>La primera revisión permite crear una base clínica segura y resolver dudas sobre vacunas, alimentación y desarrollo.</p>
+
+  <h2>Qué debes llevar</h2>
+  <p>Prepara la cartilla de vacunación si existe, un registro de desparasitación, el tipo de alimento que utiliza y una muestra de heces solo si el veterinario lo indica.</p>
+
+  <p><a href={`${base}blog/`}>Volver al blog</a></p>
+</BaseLayout>

@@ -1,0 +1,41 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+// BASE_URL es '/' en local y '/nombre-repo/' al publicar en GitHub Pages.
+const base = import.meta.env.BASE_URL;
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+  </head>
+  <body>
+    <header>
+      <p class="site-name">Clínica Veterinaria Patitas</p>
+      <nav>
+        <a href={base}>Inicio</a>
+        <a href={`${base}servicios/`}>Servicios</a>
+        <a href={`${base}blog/`}>Blog</a>
+      </nav>
+    </header>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer>
+      <p>Clínica Veterinaria Patitas</p>
+      <p>Teléfono: 912 345 678 · Correo: hola@clinicapatitas.es</p>
+    </footer>
+  </body>
+</html>
