@@ -27,7 +27,7 @@ const articulos = [
   <ul>
     {articulos.map((articulo) => (
       <li>
-        <a href={`${base}${articulo.href}`}>{articulo.title}</a>
+        <h2><a href={`${base}${articulo.href}`}>{articulo.title}</a></h2>
         <p>{articulo.description}</p>
       </li>
     ))}
